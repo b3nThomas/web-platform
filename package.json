@@ -1,24 +1,27 @@
 {
-  "name": "web-platform",
-  "version": "0.0.0",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "engines": {
-    "npm": ">=8.0.0",
-    "node": ">=16.0.0"
-  },
-  "packageManager": "yarn@1.22.15"
+    "name": "web-platform",
+    "version": "0.0.0",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "prepare": "husky install",
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "husky": "^7.0.4",
+        "lint-staged": "^12.3.7",
+        "prettier": "^2.5.1",
+        "turbo": "latest"
+    },
+    "engines": {
+        "npm": ">=8.0.0",
+        "node": ">=16.0.0"
+    },
+    "packageManager": "yarn@1.22.15"
 }
