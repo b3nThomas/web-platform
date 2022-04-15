@@ -1,6 +1,19 @@
-import { FontSizesStruct } from './types';
+import { z } from 'zod';
 
-export const fontSizes = FontSizesStruct.parse({
+const FontUnitStruct = z.string().regex(/[0-9]+em$/);
+const FontSizesStruct = z.object({
+    h1: FontUnitStruct,
+    h2: FontUnitStruct,
+    h3: FontUnitStruct,
+    h4: FontUnitStruct,
+    h5: FontUnitStruct,
+    p: FontUnitStruct,
+    pre: FontUnitStruct,
+});
+
+type FontSizes = z.infer<typeof FontSizesStruct>;
+
+export const fontSizes: FontSizes = FontSizesStruct.parse({
     h1: '1.5em',
     h2: '1.125em',
     h3: '1em',
