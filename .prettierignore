@@ -1,4 +1,5 @@
 *.sh
+*.svg
 .*
 !*.js
 node_modules

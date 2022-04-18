@@ -4,12 +4,24 @@
     "main": "./index.tsx",
     "types": "./index.tsx",
     "license": "MIT",
+    "scripts": {
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
     "devDependencies": {
+        "typescript": "^4.5.3",
+        "@babel/core": "^7.17.9",
+        "@storybook/addon-actions": "^6.4.22",
+        "@storybook/addon-essentials": "^6.4.22",
+        "@storybook/addon-interactions": "^6.4.22",
+        "@storybook/addon-links": "^6.4.22",
+        "@storybook/react": "^6.4.22",
+        "@storybook/testing-library": "^0.0.9",
+        "babel-loader": "^8.2.4",
         "@types/react": "^17.0.37",
         "@types/react-dom": "^17.0.11",
         "config": "*",
-        "tsconfig": "*",
-        "typescript": "^4.5.3"
+        "tsconfig": "*"
     },
     "dependencies": {
         "zod": "^3.14.4"
