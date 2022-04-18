@@ -1,6 +1,5 @@
 *.sh
 *.svg
 .*
-!*.js
 node_modules
 yarn.lock

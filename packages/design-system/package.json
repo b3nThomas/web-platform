@@ -9,19 +9,14 @@
         "build-storybook": "build-storybook"
     },
     "devDependencies": {
-        "typescript": "^4.5.3",
         "@babel/core": "^7.17.9",
-        "@storybook/addon-actions": "^6.4.22",
-        "@storybook/addon-essentials": "^6.4.22",
-        "@storybook/addon-interactions": "^6.4.22",
-        "@storybook/addon-links": "^6.4.22",
-        "@storybook/react": "^6.4.22",
-        "@storybook/testing-library": "^0.0.9",
-        "babel-loader": "^8.2.4",
+        "@storybook/react": "6.0.0-beta.25",
         "@types/react": "^17.0.37",
         "@types/react-dom": "^17.0.11",
+        "babel-loader": "^8.2.4",
         "config": "*",
-        "tsconfig": "*"
+        "tsconfig": "*",
+        "typescript": "^4.5.3"
     },
     "dependencies": {
         "zod": "^3.14.4"
