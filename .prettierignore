@@ -1,5 +1,6 @@
 *.sh
 *.svg
 .*
+!.storybook
 node_modules
 yarn.lock
